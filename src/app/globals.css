@@ -1,0 +1,45 @@
+/* src/app/globals.css - Perbaikan untuk pergantian tema berbasis kelas modern */
+@import "tailwindcss";
+
+/* --- TEMA DASAR (LIGHT MODE) --- */
+:root {
+  /* Warna Latar Belakang & Teks Dasar modern */
+  --background: #ffffff;
+  --foreground: #171717;
+  
+  /* --- VARIABEL KUSTOM HUMAN INITIATIVE --- */
+  /* Aksen Biru Muda Human Initiative (contoh: sky-500 fungsional) */
+  --primary: #0ea5e9; 
+}
+
+/* --- TEMA GELAP (CLASS-BASED DARK MODE) --- */
+/* Perubahan dilakukan di sini: Hapus @media (prefers-color-scheme: dark) */
+/* Dan gunakan selector kelas .dark kustom modern. */
+.dark {
+  /* Warna Latar Belakang & Teks Mode Gelap (Slate 950 fungsional/Deep Blue modern seperti Figma) fungsional */
+  --background: #0B1121; 
+  --foreground: #ededed;
+  
+  /* --- VARIABEL KUSTOM HUMAN INITIATIVE --- */
+  /* Aksen Biru Muda Mode Gelap (contoh: sky-400 fungsional) fungsional */
+  --primary: #38bdf8;
+}
+
+/* Mapping internal Tailwind theme sectional modern */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  /* Tambahkan mapping untuk warna primer modern kustom */
+  --color-primary: var(--primary);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* Base Body styling modern fungsional */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  transition-property: color, background-color; /* Transisi transisi transisi warna modern fungsional */
+  transition-duration: 300ms; /* Transisi fungsional */
+}
