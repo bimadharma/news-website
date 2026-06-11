@@ -81,7 +81,7 @@ export default function Header() {
             <ThemeSwitcher />
      
             <Link 
-              href="#" 
+              href="/donate" 
               onClick={() => setIsOpen(false)}
               className="w-full bg-[#FFBF37] text-slate-900 font-semibold px-5 py-2 rounded-full flex items-center justify-center gap-2 shadow-lg text-sm"
             >
