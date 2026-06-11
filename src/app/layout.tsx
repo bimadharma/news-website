@@ -8,7 +8,7 @@ import Footer from '@/components/Footer';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "News Portal - Human Initiative Simulation Simulation fungsional",
+  title: "News Portal - Human Initiative Simulation fungsional",
   description: "Portal Berita Modern Simulation fungsional.",
 };
 
