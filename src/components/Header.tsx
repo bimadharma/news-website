@@ -20,6 +20,7 @@ export default function Header() {
               src="/uploads/news/logo.png" 
               alt="Human Initiative Logo"
               fill
+              sizes="(max-width: 768px) 120px, 160px"
               className="object-contain"
               priority
             />

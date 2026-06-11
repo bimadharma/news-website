@@ -21,6 +21,7 @@ export default function Footer() {
                 src="/uploads/news/logo.png" 
                 alt="Human Initiative" 
                 fill 
+                sizes="(max-width: 768px) 120px, 160px"
                 className="object-contain object-left" 
               />
             </Link>

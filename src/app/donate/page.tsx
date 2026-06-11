@@ -6,14 +6,16 @@ export default function DonatePage() {
       <img
         src="/uploads/news/donate.png"
         alt="Donation Background"
-        className="absolute inset-0 w-full h-full object-cover object-center scale-100"
+        className="absolute inset-0 h-full w-full object-cover object-center"
       />
+
+      <div className="absolute inset-0 bg-black/10" />
 
       <Link
         href="/"
-        className="absolute top-6 left-6 z-20 text-white font-semibold text-sm transition-all bg-black/40 hover:bg-black/70 backdrop-blur-sm px-5 py-2.5 rounded-full border border-white/20 shadow-lg hover:scale-105 active:scale-100 flex items-center gap-1.5"
+        className="absolute top-6 left-6 z-20 rounded-full bg-[#157EC9] px-5 py-2 text-sm font-semibold text-white shadow-lg hover:bg-[#0f6aa8] transition"
       >
-        <span>← Kembali ke Beranda</span>
+        ← Kembali ke Beranda
       </Link>
     </main>
   );
